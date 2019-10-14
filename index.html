@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Biobio</title> <!-- Titeln för dokumentet. -->
+        <meta charset="utf-8"> <!-- Används för att kunna använda många olika symboler. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Denna meta tag krävs för att göra hemsidan mer responsiv.-->
+        <!-- Bootstrap css länk.-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!--Biobio egna custom css-->
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+    </head>
+
+
+    <body>
+        
+        <!-- Navbar-->
+
+        <nav class="navbar navbar-dark navbar-expand-lg"> <!-- Definerar en relativt standard navbar. navbar-expand-lg 
+        expanderar navbaren när sidan blir större.-->
+          <div class="container"> <!-- Container gör innehållet på sidan mer responsivt och i det här fallet navbaren. -->
+            <a class="navbar-brand font-we ight-bolder active" href="index.html">Biobio</a> <!-- Navbar brand är en större text som 
+            visar varumärket mer tydligt. 
+            
+            Font-weight-bolder gör texten mer synlig genom att "fylla" den. 
+            
+            active är en klass som kan användas för t. ex carousel för att visa vilken slide som ska börja. 
+            Men också för att markera med custom css att detta är sidan användaren är på just nu. -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- navbar-toggler används som knapp när sidan blir liten nog och blir som en "toggle" meny där användaren 
+                   lättare kan navigera hemsidan. -->
+              <span class="navbar-toggler-icon"></span>
+              <!-- Icon för denna button.-->
+            </button>
+          
+            <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <!-- mr auto på unordered list justerar innehållet till höger. -->
+                <li class="nav-item">
+                  <!-- 1:a list föremålet som innehåller länken. Denna länk tar en till om sidan. -->
+                  <a class="nav-link" href="om.html">Om</a> <!-- Länk till denna sida-->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="biljetter.html">Biljetter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="restaurang.html">Restaurang</a>
+                </li>             
+                <li class="nav-item">
+                  <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0"> <!-- Form som innehåller input search och knapp. -->
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> <!-- Search box -->
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button> <!-- button som ska gå igång när användaren vill söka. -->
+              </form>
+            </div>
+          </div>
+          </nav>
+          <!-- Slut på nav -->
+
+
+
+
+
+          <!-- Bild efter navbar -->
+          <section id="nav-image"> <!-- Id på section för justera bilden med custom css -->        
+            <div class="container">
+                <div class="row">                 
+                <img src="img/nav-image.jpg" alt="" class="img-fluid">                                                               
+              </div>
+            </div>  
+            <div class="py-5"></div>   <!-- Separerings div som ökar höjden på y-ledet. -->                  
+          </section>
+
+
+
+
+
+
+
+          <main>  <!-- Används för att markera att detta är huvud innehålet på sidan. Gör det lättare för Google SEO. -->        
+          <!-- Multi slide carousel sektion -->
+          <section> <!-- Används på ungefär samma sätt som main, nav, footer och gör det lättare för Google SEO men också text-läsare 
+          för folk som har svårt att se. -->
+          
+          
+          <div class="py-3"> <!-- Skapar utrymme på höjden-->
+            <h3 class="text-center">Nya filmer</h3> <!-- h3 är en mellanstor header text. text-center centrerar texten på i dess parent. -->
+          </div>
+          <div class="mb-5">
+          <div class="container">
+            <div class="row">
+
+              <!-- Intierar karousellen-->              
+              <div id="myCarousel" class="carousel slide mb-3" data-ride="carousel">
+
+              <!-- Indikatorer -->
+              <ul class="carousel-indicators">
+                <!-- Lista som med hjälp av Bootstrap JS byter plats på slides -->
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!-- Slide börjar-->
+                <li data-target="#myCarousel" data-slide-to="1" ></li>
+                <li data-target="#myCarousel" data-slide-to="2" ></li>
+              </ul>
+
+              <!-- Slides -->
+              <div class="carousel-inner"></div>
+              <!-- Första slide med bilder 3 -->
+                    
+                    <div class="carousel-item active">
+                      <!-- Row klassen sätter upp en 12 kolumners rad.-->
+                      <div class="row">
+                        <!-- Skapar en 4 kolumns rad i row, så att 3 får plats. -->
+                        <div class="col-sm-4">
+                        <img src="https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                          <div class="carousel-caption">
+                            <h3>Sprillansnya action filmer </h3>
+                          </div>
+                      </div>
+                      <div class="col-sm-4 ">
+                          <img src="https://images.pexels.com/photos/275977/pexels-photo-275977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-sm-4 ">
+                          <img src="https://images.pexels.com/photos/208647/pexels-photo-208647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                      </div>
+
+                    </div>
+                    </div>
+                  
+                                        
+                        <!-- 2nd slide -->
+                        <div class="carousel-item">
+                          <div class="row">
+                            <div class="col-sm-4">
+                        <img src="https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                        <div class="carousel-caption">
+                            <h3>Sprillansnya skräck filmer </h3>
+                          </div>
+                          </div>
+                      <div class="col-sm-4">
+                          <img src="https://images.pexels.com/photos/275977/pexels-photo-275977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                      </div>                     
+                      <div class="col-sm-4">
+                          <img src="https://images.pexels.com/photos/208647/pexels-photo-208647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                      </div>
+                      </div>
+                    </div>
+
+                    <!-- 3rd slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-sm-4">
+                      <img src="https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                      <div class="carousel-caption">
+                            <h3>Topprankade nya komedidraman</h3>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://images.pexels.com/photos/275977/pexels-photo-275977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://images.pexels.com/photos/208647/pexels-photo-208647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="">
+                    </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Kontroller som togs bort för att bildtexten gjorde dem odugliga. -->
+
+
+                  <!-- <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+
+                  <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a> -->
+
+                  </div> <!-- Carousel inner-->
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <!-- Slut på Carousel sektion-->
+            
+              
+        
+
+        
+        
+
+
+        <!-- Cards som visar de 5 mest köpta filmerna  -->
+
+
+          
+          <section>
+            <div class="container py-5"> <!-- Container som ökar höjden som är tänkt att skapa avstånd mellan sektioner.-->
+              <div class="py-3"></div> <!-- Samma teori fast höjden som ökas blir mindre. -->
+                <h3 class="text-center">Mest köpta filmer</h3>  <!-- Text-center centrerar texten -->
+               <!-- Skapar row här så att  -->
+              <div class="py-3"></div>  
+              
+              <div class="row">
+
+                <div class="col-sm-1"></div> <!-- Kolumn som tar upp sidan så att det andra korten "centreras" -->
+              
+                <!-- 1: a filmen -->
+                <div class="col-sm-2">
+                <div class="card shadow border-0 h-100">
+                  <a href="#"><img src="https://images.pexels.com/photos/1503441/pexels-photo-1503441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h5 class="text-dark"><a href="#">Dvärgarnas resa</a></h5> 
+                    <p class="card-text text-dark">En spännande film om Phil och hans kamraters färd mot en tryggare värld i deras universum.</p>
+                    <!-- Card text är inprogrammerad text som låter bootstrap använda sina klasser för att snyggt placera texten i card. -->
+                    <p class="card-text"><a href="#">Dvärgarnas resa</a></p>  <!-- Text dark är en klass som gör texten svart. -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2:a filmen -->
+              <div class="col-sm-2">
+                  <div class="card shadow border-0 h-100">
+                    <a href="#"><img src="https://images.pexels.com/photos/1503441/pexels-photo-1503441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                      <h5 class="text-dark"><a href="#">Dvärgarnas resa</a></h5>
+                      <p class="card-text text-dark">En spännande film om Phil och hans kamraters färd mot en tryggare värld i deras universum.</p>
+                      <p class="card-text"><a href="#">Dvärgarnas resa</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3:a filmen -->
+              <div class="col-sm-2">
+                  <div class="card shadow border-0 h-100">
+                    <a href="#"><img src="https://images.pexels.com/photos/1503441/pexels-photo-1503441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                      <h5 class="text-dark"><a href="#">Dvärgarnas resa</a></h5>
+                      <p class="card-text text-dark">En spännande film om Phil och hans kamraters färd mot en tryggare värld i deras universum.</p>
+                      <p class="card-text"><a href="#">Dvärgarnas resa</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- 4:e filmen -->
+              <div class="col-sm-2">
+                  <div class="card shadow border-0 h-100">
+                    <a href="#"><img src="https://images.pexels.com/photos/1503441/pexels-photo-1503441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                      <h5 class="text-dark"><a href="#">Dvärgarnas resa</a></h5>
+                      <p class="card-text text-dark">En spännande film om Phil och hans kamraters färd mot en tryggare värld i deras universum.</p>
+                      <p class="card-text"><a href="#">Dvärgarnas resa</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- 5:e filmen -->
+              <div class="col-sm-2">
+                  <div class="card shadow border-0 h-100">
+                    <a href="#"><img src="https://images.pexels.com/photos/1503441/pexels-photo-1503441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                      <h5 class="text-dark"><a href="#">Dvärgarnas resa</a></h5>
+                      <p class="card-text text-dark">En spännande film om Phil och hans kamraters färd mot en tryggare värld i deras universum.</p>
+                      <p class="card-text"><a href="#">Dvärgarnas resa</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>                         
+            </div> <!-- Slut på container. Används för att justera alla de 3 card raderna till samma början och slutpunkt.-->
+          </section>
+          <!-- Slut på 5 mest köpta filmer sektionen -->
+
+
+
+
+
+          <!-- Visar de 5 filmerna med högst betyg -->         
+          
+          <section>
+            <div class="container py-5">
+              <div class="py-5"></div>
+                <h3 class="text-center">Högst betyg</h3>               
+              <div class="py-3"></div>
+              
+              <div class="row">
+
+                <div class="col-sm-1"></div> <!-- Kolumn som tar upp sidan så att det andra korten "centreras" -->
+              
+                <!-- 1:a filmen -->
+                <div class="col-sm-2">
+                <div class="card shadow border-0 h-100">
+                  <a href="#"><img src="https://images.pexels.com/photos/878979/pexels-photo-878979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                  <div class="card-body">
+                    <h5 class="text-dark"><a href="#">Voldemorts återkomst</a></h5>
+                    <p class="card-text text-dark">Voldemort är tillbaka. Men nu med ännu mer ilska och hat. Har Harry blivit för gammal för att stoppa denna demon?</p>
+                    <p class="card-text"><a href="#">Voldemorts återkomst</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2:a filmen -->
+              <div class="col-sm-2">
+                  <div class="card shadow border-0 h-100">
+                    <a href="#"><img src="https://images.pexels.com/photos/878979/pexels-photo-878979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                      <h5 class="text-dark"><a href="#">Voldemorts återkomst</a></h5>
+                      <p class="card-text text-dark">Voldemort är tillbaka. Men nu med ännu mer ilska och hat. Har Harry blivit för gammal för att stoppa denna demon?</p>
+                      <p class="card-text"><a href="#">Voldemorts återkomst</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3:e filmen -->
+                <div class="col-sm-2">
+                    <div class="card shadow border-0 h-100">
+                      <a href="#"><img src="https://images.pexels.com/photos/878979/pexels-photo-878979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                      <div class="card-body">
+                        <h5 class="text-dark"><a href="#">Voldemorts återkomst</a></h5>
+                        <p class="card-text text-dark">Voldemort är tillbaka. Men nu med ännu mer ilska och hat. Har Harry blivit för gammal för att stoppa denna demon?</p>
+                        <p class="card-text"><a href="#">Voldemorts återkomst</a></p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- 4:e filmen -->
+                  <div class="col-sm-2">
+                      <div class="card shadow border-0 h-100">
+                        <a href="#"><img src="https://images.pexels.com/photos/878979/pexels-photo-878979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                          <h5 class="text-dark"><a href="#">Voldemorts återkomst</a></h5>
+                          <p class="card-text text-dark">Voldemort är tillbaka. Men nu med ännu mer ilska och hat. Har Harry blivit för gammal för att stoppa denna demon?</p>
+                          <p class="card-text"><a href="#">Voldemorts återkomst</a></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 5:e filmen -->
+                  <div class="col-sm-2">
+                      <div class="card shadow border-0 h-100">
+                        <a href="#"><img src="https://images.pexels.com/photos/878979/pexels-photo-878979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                          <h5 class="text-dark"><a href="#">Voldemorts återkomst</a></h5>
+                          <p class="card-text text-dark">Voldemort är tillbaka. Men nu med ännu mer ilska och hat. Har Harry blivit för gammal för att stoppa denna demon?</p>
+                          <p class="card-text"><a href="#">Voldemorts återkomst</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- Slut på container -->                              
+                  
+                    <!-- Slut på de 5 filmerna med högst betyg -->
+        
+
+
+
+
+
+
+          <!-- Cards som visar 5 kommande filmer  -->
+
+
+          
+          <section>
+              <div class="container py-5">
+                  <h3 class="text-center">Kommande filmer</h3>
+                
+                <div class="py-3"></div>
+                
+                <div class="row"> <!-- Intiterar row klassen så att grid systemet kan utnyttjas. -->
+  
+                  <div class="col-sm-1"></div> <!-- Kolumn som tar upp 1 kolumn på sidan så att det andra korten "centreras" -->
+                  <!-- Detta gör så att den andra sidan också tar upp en kolumn för att raden måste innehålla 12 kolumner -->
+                  
+                  <!-- 1: a filmen -->
+                  <div class="col-sm-2">
+                  <div class="card shadow border-0 h-100">
+                    <a href="#"><img src="https://images.pexels.com/photos/934718/pexels-photo-934718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                    <div class="card-body"> <!-- Skapar en body för card där innehåll kan ifyllas. -->
+                      <h5 class="text-dark"><a href="#">Himmalaya med Kathy</a></h5> <!-- Skapar en miniheader i card. Text-dark -->
+                      <p class="card-text text-dark">En spännande färd med Kathy och hennes fästmö Joe i Himmalya.</p>
+                      <p class="card-text"><a href="#">Himmalaya med Kathy</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2: a filmen -->
+                <div class="col-sm-2">
+                    <div class="card shadow border-0 h-100">
+                      <a href="#"><img src="https://images.pexels.com/photos/934718/pexels-photo-934718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                      <div class="card-body">
+                        <h5 class="text-dark"><a href="#">Himmalaya med Kathy</a></h5>
+                        <p class="card-text text-dark">En spännande färd med Kathy och hennes fästmö Joe i Himmalya.</p>
+                        <p class="card-text"><a href="#">Himmalaya med Kathy</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 3: e filmen -->
+                  <div class="col-sm-2">
+                      <div class="card shadow border-0 h-100">
+                        <a href="#"><img src="https://images.pexels.com/photos/934718/pexels-photo-934718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                          <h5 class="text-dark"><a href="#">Himmalaya med Kathy</a></h5>
+                          <p class="card-text text-dark">En spännande färd med Kathy och hennes fästmö Joe i Himmalya.</p>
+                          <p class="card-text"><a href="#">Himmalaya med Kathy</a></p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <!-- 4: e filmen -->
+                    <div class="col-sm-2">
+                        <div class="card shadow border-0 h-100">
+                          <a href="#"><img src="https://images.pexels.com/photos/934718/pexels-photo-934718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                          <div class="card-body">
+                            <h5 class="text-dark"><a href="#">Himmalaya med Kathy</a></h5>
+                            <p class="card-text text-dark">En spännande färd med Kathy och hennes fästmö Joe i Himmalya.</p>
+                            <p class="card-text"><a href="#">Himmalaya med Kathy</a></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 5: e filmen -->
+                    <div class="col-sm-2">
+                        <div class="card shadow border-0 h-100">
+                          <a href="#"><img src="https://images.pexels.com/photos/934718/pexels-photo-934718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img-top"></a>
+                          <div class="card-body">
+                            <h5 class="text-dark"><a href="#">Himmalaya med Kathy</a></h5>
+                            <p class="card-text text-dark">En spännande färd med Kathy och hennes fästmö Joe i Himmalya.</p>
+                            <p class="card-text"><a href="#">Himmalaya med Kathy</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div> <!-- Row klassen slutar här. -->
+                  </div> <!-- Container klassen slutar här. Användas för att sidans innehåll ska bli mer responsivt. -->
+  
+                
+            <!-- Slut på 5 kommande filmer -->
+
+        </main>
+
+        <!-- Slut på main innehåll på sidan. -->
+
+
+        <!-- Början av footern. -->
+        <footer>
+          <div id="mainFooter">
+          <div class="container py-1">
+            <div class="row">
+              
+              
+              
+              <!-- En 4 kolumners div.-->
+              <div class="col-sm-4">
+                  <!-- Början på Unordered List-->
+                  <ul class="website-links"> 
+                    <li><a href="index.html" class="text-light">Hem</a></li> <!-- Länk som tar en till startsidan. -->
+                    <li><a href="om.html" class="text-light">Om</a></li>
+                    <li><a href="biljetter.html" class="text-light">Biljetter</a></li>
+                    <li><a href="restaurang.html" class="text-light">Restaurang</a></li>
+                    <li><a href="kontakt.html" class="text-light">Kontakt</a></li>
+                  </ul> 
+
+                  <!-- slut på ul-->  
+              </div>
+              <!-- Slut på 4 kolumners diven.-->
+
+               
+              
+              <!-- form med label och input email-->
+               <div class="col-sm-4"><div class="form">
+                  <label for="newsletter-email">För exklusiva erbjudanden</label>
+                  <input type="email" name="" id="" class="form-control" placeholder="Skriv din email här">
+                  <button class="btn btn-primary">Registrera</button>
+                </div>
+              </div>
+               
+               
+                <!-- Kolumn för att omplacera justera elements position i footern, via grid. -->
+               <div class="col-sm-4"> 
+
+                <div class="col-sm-4"></div>
+                
+                 
+                
+               </div>
+              
+
+               <!-- Instagram länk-->
+                  <ul class="social-media-links">
+                  <li><a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-256.png" alt="" class="img-fluid text-white"
+                   width="40rem" height="40rem"></a></li>
+                
+
+              <!-- Twitter länk-->
+              
+                    <li><a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-256.png" alt="" class="img-fluid text-white"
+                     width="40rem" height="40rem"></a></li>
+                                                   
+                <!-- Facebook länk-->
+                    <li><a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-256.png" alt="" class="img-fluid text-white"
+                     width="40rem" height="40rem"></a></li>
+
+                     <!-- Youtube länk-->
+              
+                    <li><a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_color-128.png" alt="" class="img-fluid text-white"
+                    width="40rem" height="40rem"></a></li> <!-- Sätter manuellt width och height till 40 rem. -->
+                  </ul>
+                </div>
+                
+
+
+            </div> <!-- Slut på row -->
+
+
+              <div class="py-1 text-center">&copy; 2019, Biobio AB Hornstullsgatan 36.</div>              
+            
+          </div>
+        </div>
+        
+        </footer>
+
+        <!-- Slutet av footern. -->
+
+
+       
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        
+
+        
+
+
+    </body>
+
+
+
+</html>

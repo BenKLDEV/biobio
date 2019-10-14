@@ -1,0 +1,35 @@
+
+body
+{
+  color: #fff; /* All text på sidan ska vara vit. */
+  height: 100vh; /* Body elementet täcker 100 view heights och width. */
+  background-color: rgba(0, 0, 0, .95) /* Sätter bakgrundens färgen till alpha och snyligheten till 95%*/
+}
+
+
+.navbar-dark .navbar-brand 
+{
+  color: orange;  /* Brandtext blir */
+}
+
+
+.navbar-dark .navbar-nav a.nav-link,
+.nav-item, .nav-link
+{
+  color: #fff; /* Gör länkarna i listan vita. */
+}
+
+
+footer #mainFooter
+{
+  background-color: rgba( 0, 0, 0, .3); /* Sätter opaciteten till alpha så synligheten blir 30%. */
+}
+
+footer li 
+{
+  list-style: none; /* Tar bort cirklarna längs list föremålen. */
+}
+
+
+
+

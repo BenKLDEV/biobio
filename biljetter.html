@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Biobio</title> <!-- Titeln för dokumentet. -->
+        <meta charset="utf-8"> <!-- Används för att kunna använda många olika symboler. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Denna meta tag krävs för att göra hemsidan mer responsiv.-->
+        <!-- Bootstrap css länk.-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!--Biobio egna custom css-->
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+    </head>
+
+
+    <body>
+        
+        <!-- Navbar-->
+
+        <nav class="navbar navbar-dark navbar-expand-lg"> <!-- Definerar en relativt standard navbar. navbar-expand-lg 
+        expanderar navbaren när sidan blir större.-->
+          <div class="container"> <!-- Container gör innehållet på sidan mer responsivt och i det här fallet navbaren. -->
+            <a class="navbar-brand font-weight-bolder active" href="index.html">Biobio</a> <!-- Navbar brand är en större text som 
+            visar varumärket mer tydligt. 
+            
+            Font-weight-bolder gör texten mer synlig genom att "fylla" den. 
+            
+            active är en klass som kan användas för t. ex carousel för att visa vilken slide som ska börja. 
+            Men också för att markera med custom css att detta är sidan användaren är på just nu. -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- navbar-toggler används som knapp när sidan blir liten nog och blir som en "toggle" meny där användaren 
+                   lättare kan navigera hemsidan. -->
+              <span class="navbar-toggler-icon"></span>
+              <!-- Icon för denna button.-->
+            </button>
+          
+            <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <!-- mr auto på unordered list justerar innehållet till höger. -->
+                <li class="nav-item">
+                  <!-- 1:a list föremålet som innehåller länken. Denna länk tar en till om sidan. -->
+                  <a class="nav-link" href="om.html">Om</a> <!-- Länk till denna sida-->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="biljetter.html">Biljetter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="restaurang.html">Restaurang</a>
+                </li>             
+                <li class="nav-item">
+                  <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0"> <!-- Form som innehåller input search och knapp. -->
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> <!-- Search box -->
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button> <!-- button som ska gå igång när användaren vill söka. -->
+              </form>
+            </div>
+          </div>
+          </nav>
+          <!-- Slut på nav -->
+
+
+
+          <!-- Skapar rum-->
+          <div class="py-5"></div>
+
+           <!-- Skapar rum-->
+           <div class="py-5"></div>
+
+            <!-- Skapar rum-->
+          <div class="py-5"></div>
+
+           <!-- Skapar rum-->
+           <div class="py-5"></div>
+
+            <!-- Skapar rum-->
+          <div class="py-5"></div>
+
+
+
+             
+          
+          
+          
+          <!-- Början av footern. -->
+        <footer>
+          <div id="mainFooter">
+          <div class="container py-1">
+            <div class="row">
+              
+              
+              
+              <!-- En 4 kolumners div.-->
+              <div class="col-sm-4">
+                  <!-- Början på Unordered List-->
+                  <ul class="website-links"> 
+                    <li><a href="index.html" class="text-light">Hem</a></li> <!-- Länk som tar en till startsidan. -->
+                    <li><a href="om.html" class="text-light">Om</a></li>
+                    <li><a href="biljetter.html" class="text-light">Biljetter</a></li>
+                    <li><a href="restaurang.html" class="text-light">Restaurang</a></li>
+                    <li><a href="kontakt.html" class="text-light">Kontakt</a></li>
+                  </ul> 
+
+                  <!-- slut på ul-->  
+              </div>
+              <!-- Slut på 4 kolumners diven.-->
+
+               
+              
+              <!-- form med label och input email-->
+               <div class="col-sm-4"><div class="form">
+                  <label for="newsletter-email">För exklusiva erbjudanden</label>
+                  <input type="email" name="" id="" class="form-control" placeholder="Skriv din email här">
+                  <button class="btn btn-primary">Registrera</button>
+                </div>
+              </div>
+               
+               
+                <!-- Kolumn för att omplacera justera elements position i footern, via grid. -->
+               <div class="col-sm-4"> 
+
+                <div class="col-sm-4"></div>
+                
+                 
+                
+               </div>
+              
+
+               <!-- Instagram länk-->
+                  <ul class="social-media-links">
+                  <li><a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-256.png" alt="" class="img-fluid text-white"
+                   width="40rem" height="40rem"></a></li>
+                
+
+              <!-- Twitter länk-->
+              
+                    <li><a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-256.png" alt="" class="img-fluid text-white"
+                     width="40rem" height="40rem"></a></li>
+                                                   
+                <!-- Facebook länk-->
+                    <li><a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-256.png" alt="" class="img-fluid text-white"
+                     width="40rem" height="40rem"></a></li>
+
+                     <!-- Youtube länk-->
+              
+                    <li><a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/youtube_circle_color-128.png" alt="" class="img-fluid text-white"
+                    width="40rem" height="40rem"></a></li> <!-- Sätter manuellt width och height till 40 rem. -->
+                  </ul>
+                </div>
+                
+
+
+            </div> <!-- Slut på row -->
+
+
+              <div class="py-1 text-center">&copy; 2019, Biobio AB Hornstullsgatan 36.</div>              
+            
+          </div>
+        </div>
+        
+        </footer>
+
+        <!-- Slutet av footern. -->
+
+
+
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+          
+  
+          
+  
+      </body>
+  
+  </html>
